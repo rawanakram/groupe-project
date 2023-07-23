@@ -87,8 +87,6 @@ def delete(request, car_id):
     dell.delete() 
     return redirect('/admin')
 
-def book(request): 
-    return render(request, 'book.html')
 
 
 def logout(request): 
