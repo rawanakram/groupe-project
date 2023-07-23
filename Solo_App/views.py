@@ -94,3 +94,19 @@ def book(request):
 def logout(request): 
     request.session.flush()
     return redirect('/')
+
+
+def add_to_cart(request):
+    return render (request, "add_to_cart.html")
+
+
+def cart(request):
+    return render (request, "cart.html")
+
+
+def checkout(request):
+    return render (request, "checkout.html")
+
+
+def bookmark(request):
+    return render (request, "bookmark.html")
