@@ -6,6 +6,8 @@ from django.contrib import messages
 
 def index(request): 
     return render(request, 'home.html')
+
+
 def regLog(request): 
     return render(request, 'index.html')
 
@@ -71,8 +73,6 @@ def edit(request, car_id):
     return render(request,'edit.html',context)
 
 def editCar(request, car_id):
-   
-
         selected = Car.objects.get(id=car_id)
         selected.name = request.POST['name']
         selected.model = request.POST['model']
